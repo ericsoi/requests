@@ -7,8 +7,8 @@ import mysql.connector
 mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="jameskinuthia",
-        database="alex"
+        passwd="",
+        database=""
 )
 mycursor = mydb.cursor()
 sql = "insert into data(date, time, imei, companyid, carplate, speed, longitude, longitudedirection, latitude, latitudedirection, powerdisconnection, sygnaldisconnection, Number) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
